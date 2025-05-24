@@ -329,3 +329,31 @@ section .main .main_img img {
     text-decoration: none;
     color: #000;
 }
+
+.reviews {
+    width: 100%;
+    height: auto;
+}
+
+.reviews h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 55px;
+}
+
+.reviews .review_box {
+    width: 95%;
+    height: 50vh;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews .review_box .review_card {
+    width: 400px;
+    height: 320px;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px;
+    margin: 0 12px;
+}

@@ -58,3 +58,22 @@ section nav .social_icon i:hover {
     color: #089da1;
     cursor: pointer;
 }
+
+section .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1 {
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+section .main h1 span {
+    color: #089da1;
+}

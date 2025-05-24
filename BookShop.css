@@ -357,3 +357,31 @@ section .main .main_img img {
     padding: 15px;
     margin: 0 12px;
 }
+
+.reviews .review_box .review_card i {
+    float: right;
+    font-size: 120px;
+    position: relative;
+    bottom: 20px;
+    color: #eaeaea;
+}
+
+.reviews .review_box .review_card .card_top img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.reviews .review_box .review_card .card p {
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.reviews .review_box .review_card .card .review_icon i {
+    font-size: 16px;
+    float: left;
+    margin-top: 20px;
+    color: #089da1;
+    padding: 0 1px;
+}

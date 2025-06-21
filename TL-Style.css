@@ -65,3 +65,12 @@ h1 {
     display: flex;
     align-items: center;
 }
+
+input-group-text {
+    padding: 0.813rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem 0rem 0rem 0.3rem;
+    background-color: #17a2b8;
+    color: white;
+}

@@ -12,3 +12,12 @@
     background-color: #e2e2e2;
     border-radius: 1.5rem;
 }
+
+::-webkit-scrollbar-thumb {
+    background-color: #17a2b8;
+    border-radius: 1.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #117a8c;
+}

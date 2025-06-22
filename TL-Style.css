@@ -101,3 +101,20 @@ input-group-text {
     font-size: 0.8rem;
     margin-top: 0.3rem;
 }
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+
+.filter-buttons button {
+    flex: 1;
+    margin: 0 0.3rem;
+    padding: 0.6rem;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}

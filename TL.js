@@ -171,3 +171,6 @@ function saveEditTodo() {
     closeEditModal();
     render();
 }
+function closeDeleteModal() {document.getElementById('deleteModal').style.display = 'none';}
+function saveTodos() {localStorage.setItem('todos', JSON.stringify(todos));}
+document.addEventListener('DOMContentLoaded', () => {render();});

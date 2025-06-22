@@ -106,3 +106,10 @@ function deleteAllTodos() {
     saveTodos();
     render();
 }
+function deleteAllTodos() {
+    if (todos.length === 0) {
+        msgshow("No tasks to delete.");
+        return;
+    }
+    document.getElementById('deleteAllModal').style.display = 'flex';
+}

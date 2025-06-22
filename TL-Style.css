@@ -148,3 +148,14 @@ input-group-text {
     margin-bottom: 0.6rem;
     background-color: #f9f9f9;
 }
+
+.todo-item.done span {
+    text-decoration: line-through;
+    color: #f44336;
+    font-weight: 500;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 0.6rem;
+}

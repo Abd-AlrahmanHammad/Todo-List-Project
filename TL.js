@@ -128,19 +128,7 @@ function confirmDeleteTodo() {
     saveTodos();
     render();
 }
-function deleteDoneTodos() {
-    todos = todos.filter(todo => !todo.done);
-    saveTodos();
-    render();
-}
-function deleteDoneTodos() {
-    const doneTasks = todos.filter(todo => todo.done);
-    if (doneTasks.length === 0) {
-        msgshow("No done tasks to delete.");
-        return;
-    }
-    document.getElementById('deleteAllDoneModal').style.display = 'flex';
-}
+
 function closeDeleteAllModal() {
     document.getElementById('deleteAllModal').style.display = 'none';
 }

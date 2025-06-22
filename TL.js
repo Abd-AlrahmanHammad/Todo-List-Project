@@ -127,9 +127,13 @@ function confirmDeleteTodo() {
     saveTodos();
     render();
 }
+
+
+
 function closeDeleteAllModal() {
     document.getElementById('deleteAllModal').style.display = 'none';
 }
+
 function confirmDeleteAllDone() {
     todos = todos.filter(todo => !todo.done);
     closeDeleteAllDoneModal();

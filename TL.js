@@ -101,3 +101,8 @@ function deleteDoneTodos() {
     saveTodos();
     render();
 }
+function deleteAllTodos() {
+    todos = [];
+    saveTodos();
+    render();
+}

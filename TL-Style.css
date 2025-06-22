@@ -210,3 +210,11 @@ input-group-text {
     justify-content: center;
     align-items: center;
 }
+
+.modal-content {
+    background: #fff;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 19rem;
+}

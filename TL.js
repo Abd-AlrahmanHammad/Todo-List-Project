@@ -101,22 +101,11 @@ function deleteDoneTodos() {
     saveTodos();
     render();
 }
-function deleteAllTodos() {
-    todos = [];
-    saveTodos();
-    render();
-}
-function deleteAllTodos() {
-    if (todos.length === 0) {
-        msgshow("No tasks to delete.");
+function deleteDoneTodos() {
+    const doneTasks = todos.filter(todo => todo.done);
+    if (doneTasks.length === 0) {
+        msgshow("No done tasks to delete.");
         return;
     }
-    document.getElementById('deleteAllModal').style.display = 'flex';
-}
-function confirmDeleteAll() {
-    todos = [];
-    closeDeleteAllModal();
-    msgshow("All Tasks has been deleted.");
-    saveTodos();
-    render();
+    document.getElementById('deleteAllDoneModal').style.display = 'flex';
 }

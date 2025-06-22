@@ -89,6 +89,18 @@ function deleteTodo(index) {
     currentDeleteIndex = index;
     document.getElementById('deleteModal').style.display = 'flex';
 }
+function deleteAllTodos() {
+    todos = [];
+    saveTodos();
+    render();
+}
+function deleteAllTodos() {
+    if (todos.length === 0) {
+        msgshow("No tasks to delete.");
+        return;
+    }
+    document.getElementById('deleteAllModal').style.display = 'flex';
+}
 function confirmDeleteTodo() {
     todos.splice(currentDeleteIndex, 1);
     closeDeleteModal();

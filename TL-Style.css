@@ -218,3 +218,16 @@ input-group-text {
     text-align: center;
     width: 19rem;
 }
+
+.modal-content input {
+    width: 90%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 0.16rem solid #ddd;
+    border-radius: 0.3rem;
+}
+
+.modal-content .modal-actions {
+    display: flex;
+    justify-content: space-between;
+}

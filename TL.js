@@ -127,13 +127,9 @@ function confirmDeleteTodo() {
     saveTodos();
     render();
 }
-
-
-
 function closeDeleteAllModal() {
     document.getElementById('deleteAllModal').style.display = 'none';
 }
-
 function confirmDeleteAllDone() {
     todos = todos.filter(todo => !todo.done);
     closeDeleteAllDoneModal();
@@ -157,4 +153,7 @@ function openedit(index) {
     errorMessage.textContent = '';
     editTodoInput.value = todos[index].text;
     document.getElementById('editModal').style.display = 'flex';
+}
+function closeEditModal() {
+    document.getElementById('editModal').style.display = 'none';
 }

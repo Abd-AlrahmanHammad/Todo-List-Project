@@ -109,9 +109,23 @@ function deleteDoneTodos() {
     }
     document.getElementById('deleteAllDoneModal').style.display = 'flex';
 }
+function deleteAllTodos() {
+    todos = [];
+    saveTodos();
+    render();
+}
+function deleteAllTodos() {
+    if (todos.length === 0) {
+        msgshow("No tasks to delete.");
+        return;
+    }
+    document.getElementById('deleteAllModal').style.display = 'flex';
+}
+
 function closeDeleteAllModal() {
     document.getElementById('deleteAllModal').style.display = 'none';
 }
+
 function confirmDeleteAllDone() {
     todos = todos.filter(todo => !todo.done);
     closeDeleteAllDoneModal();

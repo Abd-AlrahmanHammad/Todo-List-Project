@@ -137,3 +137,25 @@ input-group-text {
     font-size: 1rem;
     margin-top: 1.3rem;
 }
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+    border: 0.06rem solid #ddd;
+    border-radius: 0.3rem;
+    margin-bottom: 0.6rem;
+    background-color: #f9f9f9;
+}
+
+.todo-item.done span {
+    text-decoration: line-through;
+    color: #f44336;
+    font-weight: 500;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 0.6rem;
+}

@@ -31,7 +31,6 @@ if (checktodos.length === 0) {
         todoList.appendChild(li);
     });
 }
-
 function msgshow(message) {
     const container = document.querySelector('.container');
     const existingMessageBox = container.querySelector('.message-box');
@@ -109,9 +108,32 @@ function deleteDoneTodos() {
     }
     document.getElementById('deleteAllDoneModal').style.display = 'flex';
 }
+function deleteAllTodos() {
+    todos = [];
+    saveTodos();
+    render();
+}
+function deleteAllTodos() {
+    if (todos.length === 0) {
+        msgshow("No tasks to delete.");
+        return;
+    }
+    document.getElementById('deleteAllModal').style.display = 'flex';
+}
+function confirmDeleteTodo() {
+    todos.splice(currentDeleteIndex, 1);
+    closeDeleteModal();
+    msgshow("Task has been deleted.");
+    saveTodos();
+    render();
+}
+
+
+
 function closeDeleteAllModal() {
     document.getElementById('deleteAllModal').style.display = 'none';
 }
+
 function confirmDeleteAllDone() {
     todos = todos.filter(todo => !todo.done);
     closeDeleteAllDoneModal();
@@ -127,4 +149,12 @@ function filterTodos(task) {
     buttons.forEach(button => button.classList.remove('active'));
     document.querySelector(`.filter-buttons button[onclick="filterTodos('${task}')"]`).classList.add('active');
     render(task);
+}
+function openedit(index) {
+    currentEditIndex = index;
+    const editTodoInput = document.getElementById('editTodoInput');
+    const errorMessage = document.getElementById('edit-error-message');
+    errorMessage.textContent = '';
+    editTodoInput.value = todos[index].text;
+    document.getElementById('editModal').style.display = 'flex';
 }

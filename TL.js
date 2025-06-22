@@ -80,3 +80,8 @@ function add() {
     render();
     msgshow('Task added successfully 🎉');
 }
+function toggle(index) {
+    todos[index].done = !todos[index].done;
+    saveTodos();
+    render();
+}

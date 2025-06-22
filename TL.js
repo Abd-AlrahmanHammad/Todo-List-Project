@@ -157,3 +157,17 @@ function openedit(index) {
 function closeEditModal() {
     document.getElementById('editModal').style.display = 'none';
 }
+function saveEditTodo() {
+    const editTodoInput = document.getElementById('editTodoInput');
+    const errorMessage = document.getElementById('edit-error-message');
+    const newText = editTodoInput.value.trim();
+    if (newText.length < 5) {
+        errorMessage.textContent = '⛔ Task must be at least 5 characters long';
+        return;
+    }
+    todos[currentEditIndex].text = newText;
+    msgshow("Task has been edited.");
+    saveTodos();
+    closeEditModal();
+    render();
+}

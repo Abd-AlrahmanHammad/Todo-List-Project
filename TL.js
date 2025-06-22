@@ -119,3 +119,6 @@ function confirmDeleteAllDone() {
     saveTodos();
     render();
 }
+function closeDeleteAllDoneModal() {
+    document.getElementById('deleteAllDoneModal').style.display = 'none';
+}

@@ -137,3 +137,14 @@ input-group-text {
     font-size: 1rem;
     margin-top: 1.3rem;
 }
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+    border: 0.06rem solid #ddd;
+    border-radius: 0.3rem;
+    margin-bottom: 0.6rem;
+    background-color: #f9f9f9;
+}

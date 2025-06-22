@@ -109,3 +109,6 @@ function deleteDoneTodos() {
     }
     document.getElementById('deleteAllDoneModal').style.display = 'flex';
 }
+function closeDeleteAllModal() {
+    document.getElementById('deleteAllModal').style.display = 'none';
+}

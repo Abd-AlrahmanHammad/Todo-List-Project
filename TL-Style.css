@@ -95,3 +95,9 @@ input-group-text {
 .todo-input button:hover {
     background-color: #117a8c;
 }
+
+.todo-input .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}

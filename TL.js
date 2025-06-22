@@ -113,3 +113,10 @@ function deleteAllTodos() {
     }
     document.getElementById('deleteAllModal').style.display = 'flex';
 }
+function confirmDeleteAll() {
+    todos = [];
+    closeDeleteAllModal();
+    msgshow("All Tasks has been deleted.");
+    saveTodos();
+    render();
+}

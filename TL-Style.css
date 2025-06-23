@@ -310,3 +310,8 @@ input-group-text {
         font-size: 0.9rem;
     }
 }
+
+input:invalid {
+    border-color: #f44336;
+    background-color: #ffe6e6;
+}

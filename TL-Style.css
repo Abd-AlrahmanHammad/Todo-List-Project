@@ -324,3 +324,15 @@ input:invalid {
 .modal[style="display: flex;"] .modal-content {
     transform: scale(1);
 }
+
+.todo-item.done span {
+    text-decoration: line-through;
+    color: #f44336;
+    font-weight: 600;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+@keyframes fadeInOut 0% {
+    opacity: 0;
+    transform: translateY(-0.6rem);
+}

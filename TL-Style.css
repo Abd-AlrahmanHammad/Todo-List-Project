@@ -280,3 +280,33 @@ input-group-text {
     border: 0.06rem solid #ddd;
     border-radius: 0.3rem;
 }
+
+.message-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 0.6rem;
+    margin-top: 0.6rem;
+    border: 0.06rem solid #f5c6cb;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    animation: fadeInOut 3s ease-in-out;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 0.6rem;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .filter-buttons button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}

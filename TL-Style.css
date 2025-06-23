@@ -310,3 +310,17 @@ input-group-text {
         font-size: 0.9rem;
     }
 }
+
+input:invalid {
+    border-color: #f44336;
+    background-color: #ffe6e6;
+}
+
+.modal-content {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal[style="display: flex;"] .modal-content {
+    transform: scale(1);
+}

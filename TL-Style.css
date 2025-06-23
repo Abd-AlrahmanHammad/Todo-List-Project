@@ -336,3 +336,9 @@ input:invalid {
     opacity: 0;
     transform: translateY(-0.6rem);
 }
+
+10%,
+90% {
+    opacity: 1;
+    transform: translateY(0);
+}

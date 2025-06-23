@@ -264,3 +264,19 @@ input-group-text {
     background-color: #cccccc;
     color: black;
 }
+
+.modal-content .cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+.modal-content .cancel:hover {
+    background-color: #d32f2f;
+}
+
+.form-control {
+    flex-grow: 1;
+    padding: 0.6rem;
+    border: 0.06rem solid #ddd;
+    border-radius: 0.3rem;
+}

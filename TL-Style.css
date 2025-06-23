@@ -255,3 +255,12 @@ input-group-text {
     background-color: #17a2b8;
     color: white;
 }
+
+.modal-content .save:hover {
+    background-color: #117a8c;
+}
+
+.modal-content .confirm {
+    background-color: #cccccc;
+    color: black;
+}
